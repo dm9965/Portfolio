@@ -52,7 +52,7 @@ header {
 section {
   grid-column: 2 / 8;
   padding: 1rem;
-  background: var(--dark-bg);
+  background-color:rgba(0, 0, 0, 0.5);
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);
