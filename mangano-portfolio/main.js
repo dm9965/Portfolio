@@ -54,11 +54,25 @@ const redPlanet = new THREE.Mesh(
     })
 );
 
+const greenPlanet = new THREE.Mesh(
+    new THREE.SphereGeometry(6, 32, 32),
+    new THREE.MeshStandardMaterial({
+        color: 0xB2D3C2,
+        map: planetTexture,
+        roughness: .75
+    })
+);
+
 
 redPlanet.position.z = -50;
 redPlanet.position.x = 50;
 redPlanet.position.y = 50;
 scene.add(redPlanet);
+
+greenPlanet.position.z = 15;
+greenPlanet.position.x = 50;
+greenPlanet.position.y = -20;
+scene.add(greenPlanet);
 
 deathStar.position.z = 10;
 deathStar.position.x = -30;
@@ -102,6 +116,9 @@ function animate() {
 
     redPlanet.rotation.z += 0.01;
     redPlanet.rotation.y += 0.01;
+
+    greenPlanet.rotation.z += 0.01;
+    greenPlanet.rotation.y += 0.01;
 
     deathStar.rotation.y += -0.005;
 
