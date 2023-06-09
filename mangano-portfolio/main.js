@@ -16,7 +16,7 @@ camera.position.setZ(0);
 
 const geometry = new THREE.TorusGeometry( 10, 3, 16, 100 );
 const material = new THREE.MeshStandardMaterial({color: 0xffffff,
-    metalness: 1, roughness: 0.5});
+    metalness: 1, roughness: 0.3});
 
 const torusRing = new THREE.Mesh(geometry, material);
 scene.add(torusRing);
@@ -114,13 +114,13 @@ function animate() {
     torusRing.rotation.y += 0.005;
     torusRing.rotation.z += 0.01;
 
-    redPlanet.rotation.z += 0.01;
-    redPlanet.rotation.y += 0.01;
+    redPlanet.rotation.z += 0.005;
+    redPlanet.rotation.y += 0.005;
 
-    greenPlanet.rotation.z += 0.01;
-    greenPlanet.rotation.y += 0.01;
+    greenPlanet.rotation.z += 0.005;
+    greenPlanet.rotation.y += 0.005;
 
-    deathStar.rotation.y += -0.005;
+    deathStar.rotation.y += -0.0025;
 
     controls.update();
 
