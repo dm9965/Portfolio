@@ -15,16 +15,15 @@ canvas {
 
 
 main {
-  width: 100vw;
   color: white;
   z-index: 99;
   position: absolute;
-  width: 100%;
-  margin: 0px auto;
-  padding: 120px 0px;
-
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 100px;
 }
 
 @font-face {
@@ -41,55 +40,52 @@ main {
   font-style: normal;
 }
 
-h1, h2, h3, blockquote {
+h1, h2, h3, h4 blockquote {
   font-family: "Montserrat-Bold";
   font-weight: 700;
   font-style: normal;
 }
-
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-
 
 header {
   background: var(--dark-bg);
   grid-column: 2 / span 5;
   font-size: 2.5rem;
   padding: 2rem;
-  margin-bottom: var(--spacing);
+  margin-bottom: 10%;
   font-family: Montserrat-Regular;
 }
 
 section {
-  grid-column: 2 / 8;
+  width: 80%;
   padding: 1rem;
   background-color:rgba(0, 0, 0, 0.5);
   font-size: 1.25rem;
   line-height: 1.5;
   font-family: "Montserrat-Regular";
-  margin-bottom: var(--spacing);
+  margin-bottom: 10%;
 }
 
 blockquote {
   margin: 0;
   padding: 0;
-  grid-column: 2 / span 9;
-  margin-bottom: var(--spacing);
+  margin-bottom: 10%;
   font-family: "Montserrat-Bold";
 }
 
 blockquote p {
   color: black;
   background-color: white;
-  font-size: 4rem;
-  display: inline;
+  font-size: 3rem;
   font-family: Montserrat-Bold;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 10px;
 }
 
-.left {
-  grid-column: 6 / 12;
+
+.skills {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align: flex-start;
 }
