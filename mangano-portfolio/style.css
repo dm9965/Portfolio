@@ -27,8 +27,22 @@ main {
   grid-template-columns: repeat(12, 1fr);
 }
 
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat/static/Montserrat-Regular.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
 h1, h2, h3, blockquote {
-  font-family: elevon, sans-serif;
+  font-family: "Montserrat-Bold";
   font-weight: 700;
   font-style: normal;
 }
@@ -47,6 +61,7 @@ header {
   font-size: 2.5rem;
   padding: 2rem;
   margin-bottom: var(--spacing);
+  font-family: Montserrat-Regular;
 }
 
 section {
@@ -55,6 +70,7 @@ section {
   background-color:rgba(0, 0, 0, 0.5);
   font-size: 1.25rem;
   line-height: 1.5;
+  font-family: "Montserrat-Regular";
   margin-bottom: var(--spacing);
 }
 
@@ -63,6 +79,7 @@ blockquote {
   padding: 0;
   grid-column: 2 / span 9;
   margin-bottom: var(--spacing);
+  font-family: "Montserrat-Bold";
 }
 
 blockquote p {
@@ -70,6 +87,7 @@ blockquote p {
   background-color: white;
   font-size: 4rem;
   display: inline;
+  font-family: Montserrat-Bold;
 }
 
 .left {
