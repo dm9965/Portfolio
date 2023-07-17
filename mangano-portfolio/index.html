@@ -38,10 +38,26 @@
     </section>
 
     <section class="skills">
-      <h2 style="width: 20%"> Skills and Tools </h2>
-      <hr>
-        <div>
-            <h3 style="width: 200px">Languages and Frameworks</h3>
+      <style>
+        @media (max-width: 500px) {
+          .skills {
+            grid-column: 1 / 12;
+            width: 92.5%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        }
+      </style>
+      <div style="display: flex; flex-direction: row; width: 20%">
+        <h2 style="width: 20%;
+                 padding-right: 4%"> Skills and Tools
+        </h2>
+      </div>
+        <div style="width: 25%;
+              padding-left: 5%;
+              border-left: white thin solid">
+            <h3>Languages and Frameworks</h3>
             <ul>
                 <li>Angular</li>
                 <li>React</li>
@@ -59,7 +75,9 @@
         <div style="display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
-                    align-items: center;">
+                    align-items: center;
+                    width: 25%;
+                    ">
             <h3>IDEs</h3>
             <ul>
                 <li>IntelliJ</li>
@@ -70,8 +88,9 @@
                 <li>XCode</li>
             </ul>
         </div>
-        <div>
-            <h3 style="width: 200px">Project Management and Design</h3>
+        <div style="width: 25%;
+                    padding-left: 5%">
+            <h3>Project Management and Design</h3>
             <ul>
                 <li>AGILE</li>
                 <li>SCRUM</li>

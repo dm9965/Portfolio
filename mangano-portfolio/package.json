@@ -12,6 +12,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
+    "@fontsource/montserrat": "^5.0.5",
     "three": "^0.153.0"
   }
 }
